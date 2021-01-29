@@ -2,11 +2,12 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.*;
-import java.sql.SQLOutput;
 
 public class Main {
 
-    private static final String basePath = "F:\\IdeaProjects\\untitled1\\src\\main\\resources\\";
+    private static final String firstPath = "F:\\IdeaProjects\\DataMenager";
+    private static final String secondPath = "\\src\\main\\resources\\";
+    private static final String basePath = firstPath + secondPath;
     // 0-HOME, 1-DEV, 2-TEST
     private static final String[] myPaths = {basePath + "HOME", basePath + "DEV", basePath + "TEST"};
     private static final Path home = Paths.get(myPaths[0]); //HOME
